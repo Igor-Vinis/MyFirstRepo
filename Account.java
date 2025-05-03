@@ -5,6 +5,7 @@ public class Account {
     private String name;
     private double balance;
     private boolean credit;
+    private int score;
 
     public Account(String name, double balance) {
         this.name = name;
@@ -12,7 +13,12 @@ public class Account {
         if (balance > 0.0) {
             this.balance = balance;
         }
+    }
 
+    public void setScore(int score){
+        if (score >= -1000 & score <= 1000){
+            this.score = score;
+        }
     }
 
     public void setName(String name){
@@ -29,6 +35,10 @@ public class Account {
 
     public double getBalance() {
         return balance;
+    }
+
+    public int getScore() {
+        return score;
     }
 
     public void deposit(double depositAmmount){
