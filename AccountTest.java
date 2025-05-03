@@ -11,7 +11,7 @@ public class AccountTest   {
         System.out.println("Digite a sua renda inicial: ");
         double blc = scan.nextDouble();
         Account myAccount = new Account("Igor", blc);
-        myAccount.deposit(1000);
+        myAccount.deposit(2000);
         displayAcc(myAccount);
 
 //        System.out.printf("Olá, %s! Por favor, digite o seu novo nome: ", myAccount.getName());

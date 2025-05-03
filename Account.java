@@ -4,11 +4,12 @@ public class Account {
 
     private String name;
     private double balance;
+    private boolean credit;
 
     public Account(String name, double balance) {
         this.name = name;
 
-        if (balance > 0.0) {
+        if (balance > 0.1) {
             this.balance = balance;
         }
 
