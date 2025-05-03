@@ -8,7 +8,7 @@ public class Account {
     public Account(String name, double balance) {
         this.name = name;
 
-        if (balance == 0.0) {
+        if (balance > 0.0) {
             this.balance = balance;
         }
 
@@ -32,7 +32,7 @@ public class Account {
 
     public void deposit(double depositAmmount){
         if (depositAmmount > 0){
-            balance += depositAmmount;
+            this.balance += depositAmmount;
         }
         }
     }
