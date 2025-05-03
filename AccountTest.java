@@ -8,8 +8,10 @@ public class AccountTest   {
         Scanner scan = new Scanner(System.in);
 
        // String nome = "Igor";
-        Account myAccount = new Account("Igor",0);
-        myAccount.deposit(7846.2);
+        System.out.println("Digite a sua renda inicial: ");
+        double blc = scan.nextDouble();
+        Account myAccount = new Account("Igor", blc);
+        myAccount.deposit(1000);
         displayAcc(myAccount);
 
 //        System.out.printf("Olá, %s! Por favor, digite o seu novo nome: ", myAccount.getName());
